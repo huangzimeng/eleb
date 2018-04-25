@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//商家列表api
+Route::get('/shops','ShopsController@shops');
+Route::get('/shop','ShopsController@shop');
+Route::post('/login','ShopsController@login');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
