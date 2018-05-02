@@ -49,6 +49,7 @@ class ShopsController extends Controller
             $category->goods_list = [];
             $goods_list = DB::table('goodslists')->where('goods_category_id',$category->id)->where('shop_id',$id)->get();
             foreach ($goods_list as $goods){
+                $goods->goods_id  = $goods->id;
                 $category->goods_list[] = $goods;
             }
            $commodity[] = $category;

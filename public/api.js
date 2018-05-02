@@ -1,36 +1,38 @@
 window.api = {
   // 登录验证接口
-  loginCheck: '/login',
+  loginCheck: '/api/login',
   // 获取短信验证码接口
-  sms: '/sms.php',
+  sms: '/api/sms',
   // 注册接口
-  regist: '/regist.php',
-  // 修改密码接口
-  changePassword: '/changePassword.php',
-  // 忘记密码接口
-  forgetPassword: '/forgetPassword.php',
-  // 地址列表接口
-  addressList: '/addressList.php',
-  // 指定地址接口
-  address: '/address.php',
-  // 保存新增地址接口
-  addAddress: '/addAddress.php',
-  // 保存修改地址接口
-  editAddress: '/editAddress.php',
-  // 获得订单列表接口
-  orderList: '/orderList.php',
-  // 获得指定订单接口
-  order: '/order.php',
+  regist: '/api/regist',
   // 获得商家列表接口
   businessList: '/shops',
   // 获得指定商家接口
   business: '/shop',
+  // 修改密码接口
+  changePassword: '/api/changePassword',
+  // 忘记密码接口
+  forgetPassword: '/api/forgetPassword',
+  // 保存新增地址接口
+  addAddress: '/api/addAddress',
+  // 地址列表接口
+  addressList: '/api/addressList',
+  // 指定地址接口 修改回显
+  address: '/api/address',
+  // 保存修改地址接口
+  editAddress: '/api/editAddress',
+  //删除地址
+  deleteAddress:'/api/deleteAddress',
   // 保存购物车接口
-  addCart: '/addCart.php',
+  addCart: '/api/addCart',
   // 获取购物车数据接口
-  cart: '/cart.php',
+  cart: '/api/cart',
   // 添加订单接口
-  addOrder: '/addorder.php',
+  addOrder: '/api/addorder',
+  // 获得指定订单接口
+  order: '/api/order',
+  // 获得订单列表接口
+  orderList: '/api/orderList',
   // 支付接口
-  pay: '/pay.php'
+  pay: '/api/pay'
 };
