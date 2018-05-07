@@ -9,13 +9,6 @@ use Illuminate\Support\Facades\DB;
 
 class AddressController extends Controller
 {
-//    public function __construct()
-//    {
-//        if (!Auth::check()){
-//            return ['status'=>'false','message'=>'请先登录!'];
-//        }
-//
-//    }
     //地址 添加
     public function add(Request $request)
     {

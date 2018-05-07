@@ -90,7 +90,7 @@ class OrderController extends Controller
         $shop_id = $order->shop_id;
         $email = DB::table('store_infos')->where('id',$shop_id)->select('email')->first();
         $shop_name = DB::table('store_infos')->where('id',$shop_id)->select('shop_name')->first();
-        Mail::send('Email.blade',
+        Mail::send('email.blade',
             ['name'=>$shop_name->shop_name],
             function ($message) use ($email){
                 $message->to($email->email)->subject('您有新的订单!');
